@@ -25,6 +25,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class CommonMethods extends PageInitializer {
+	public static boolean isDemoMode = true;
 	
 	/*
      * Method that clears and sends key
@@ -330,7 +331,57 @@ public class CommonMethods extends PageInitializer {
      }
      
      
-     
+     public void highLightElementMethod(WebElement element) {
+
+         try {
+             if (isDemoMode) {
+                 for (int i = 0; i <= 2; i++) {
+
+                     // Create object of a JavascriptExecutor interface
+                     JavascriptExecutor js = (JavascriptExecutor) BaseClass.getDriver();
+                     // use executeScript() method and pass the arguments
+                     // Here i pass values based on css style. Yellow background color with solid red
+                     // color border.
+                     js.executeScript(
+                             "arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');",
+                             element);
+
+                     wait(0.2);
+
+                     // Create object of a JavascriptExecutor interface
+                     js = (JavascriptExecutor) BaseClass.getDriver();
+                     // use executeScript() method and pass the arguments
+                     // Here i pass values based on css style. Yellow background color with solid red
+                     // color border.
+                     js.executeScript(
+                             "arguments[0].setAttribute('style', 'background: red; border: 2px solid yellow;');",
+                             element);
+
+                     wait(0.2);
+
+                     // Create object of a JavascriptExecutor interface
+                     js = (JavascriptExecutor) BaseClass.getDriver();
+                     // use executeScript() method and pass the arguments
+                     // Here i pass values based on css style. Yellow background color with solid red
+                     // color border.
+                     js.executeScript("arguments[0].setAttribute('style', 'background: white; border: 2px solid red;');",
+                             element);
+                 }
+             }
+         } catch (Exception e) {
+
+         }
+
+     }
+
+     public void wait(double second) {
+         try {
+             Thread.sleep((int) (second * 1000));
+         } catch (Exception e) {
+
+         }
+
+     }
      
      
      
