@@ -13,6 +13,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.annotations.BeforeMethod;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -20,7 +21,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 	
 private static WebDriver driver;
-	
+private static Properties configFile;
+
+	@BeforeMethod
 	//driver instantiation function
 	public static WebDriver getDriver() {
 
@@ -39,8 +42,6 @@ private static WebDriver driver;
 				ChromeOptions options = new ChromeOptions();
 		        options.addArguments("--headless");
 		        driver = new ChromeDriver(options);
-
-		        
 				break;
 
 			case "firefox":
@@ -72,8 +73,6 @@ private static WebDriver driver;
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Constants.implicitWait_time, TimeUnit.SECONDS);
 			PageInitializer.initialize();
-			
-
 		}
 
 		return driver;
@@ -87,11 +86,7 @@ private static WebDriver driver;
 			}
 	}
 	
-	
 	//config Reader function
-	
-	private static Properties configFile;
-	
 
 	static {
 		
@@ -115,16 +110,6 @@ private static WebDriver driver;
 		return configFile.getProperty(keyName);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 
 }
