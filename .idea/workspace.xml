@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="merge from main 04/04/2023">
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/EpicWinners_GroupProject/EpicWinners_GroupProject/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/EpicWinners_GroupProject/EpicWinners_GroupProject/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/propertiesFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/propertiesFiles/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/LoginTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/LoginTestCases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/BaseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/CommonMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/CommonMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ListenersTestNG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ListenersTestNG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/PageInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/PageInitializer.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="AddressBranch" />
+                    <option name="lastUsedInstant" value="1680639637" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1680639597" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NnHO6Qy0l6hPVFDDuucn9V7sOK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/aom_t/eclipse-workspace/TestNgDesign",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testngPK.xml">
+    <configuration name="C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testngPK.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EpicWinners_GroupProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngPK.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EpicWinners_GroupProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PKAddressTestCases" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EpicWinners_GroupProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PKAddressTestCases.verifyEnterZipcode" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EpicWinners_GroupProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="METHOD_NAME" value="verifyEnterZipcode" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PKAddressTestCases.verifySelectCountryDropdownButton" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EpicWinners_GroupProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="METHOD_NAME" value="verifySelectCountryDropdownButton" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testngPK.xml" />
+        <item itemvalue="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" />
+        <item itemvalue="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton" />
+        <item itemvalue="TestNG.PKAddressTestCases" />
+        <item itemvalue="TestNG.PKAddressTestCases.verifyEnterZipcode" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="" />
+      <created>1680292892982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680292892982</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added gitignore">
+      <created>1680639880638</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680639880638</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added gitignore">
+      <created>1680639943531</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680639943531</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added PKAdressPage">
+      <created>1680640018631</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680640018631</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added PageInitializer">
+      <created>1680640075219</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680640075219</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added BaseClass">
+      <created>1680640279286</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680640279286</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added two more properties(zipcode,country)">
+      <created>1680640318974</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680640318974</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added PKAddressTestCases">
+      <created>1680640364456</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680640364456</updated>
+    </task>
+    <task id="LOCAL-00008" summary="merge from main 04/04/2023">
+      <created>1680641363837</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680641363837</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added gitignore" />
+    <MESSAGE value="added PKAdressPage" />
+    <MESSAGE value="added PageInitializer" />
+    <MESSAGE value="added BaseClass" />
+    <MESSAGE value="added two more properties(zipcode,country)" />
+    <MESSAGE value="added PKAddressTestCases" />
+    <MESSAGE value="merge from main 04/04/2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge from main 04/04/2023" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
