@@ -5,18 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="merge from main 04/04/2023">
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/PageInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/PageInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/propertiesFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/propertiesFiles/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/EpicWinners_GroupProject/EpicWinners_GroupProject/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/EpicWinners_GroupProject/EpicWinners_GroupProject/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/propertiesFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/propertiesFiles/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/LoginTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/LoginTestCases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/BaseClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/CommonMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/CommonMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ListenersTestNG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ListenersTestNG.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/PageInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/PageInitializer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +44,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -48,12 +53,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="AddressBranch" />
-                    <option name="lastUsedInstant" value="1680639637" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1680658133" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1680639597" />
+                    <option name="branchName" value="AddressBranch" />
+                    <option name="lastUsedInstant" value="1680639637" />
                   </RecentBranch>
                 </list>
               </option>
@@ -88,30 +93,20 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/aom_t/eclipse-workspace/TestNgDesign",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aom_t/PKGitHub&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testngPK.xml">
+}</component>
+  <component name="RunManager" selected="TestNG.PKAddressTestCases.verifyCheckAddressButtonFunctionality">
     <configuration name="C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testngPK.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EpicWinners_GroupProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testngPK.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EpicWinners_GroupProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -136,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PKAddressTestCases.verifyEnterZipcode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PKAddressTestCases.verifyCheckAddressButtonFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
         <pattern>
@@ -146,7 +141,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
-      <option name="METHOD_NAME" value="verifyEnterZipcode" />
+      <option name="METHOD_NAME" value="verifyCheckAddressButtonFunctionality" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -172,13 +167,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PKAddressTestCases.verifySignInToSeeYourAddress" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EpicWinners_GroupProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="METHOD_NAME" value="verifySignInToSeeYourAddress" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testngPK.xml" />
-        <item itemvalue="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" />
+        <item itemvalue="TestNG.PKAddressTestCases.verifyCheckAddressButtonFunctionality" />
+        <item itemvalue="TestNG.PKAddressTestCases.verifySignInToSeeYourAddress" />
         <item itemvalue="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton" />
         <item itemvalue="TestNG.PKAddressTestCases" />
-        <item itemvalue="TestNG.PKAddressTestCases.verifyEnterZipcode" />
+        <item itemvalue="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testngPK.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680641363837</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="merge from main 04/04/2023">
+      <created>1680658247637</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680658247637</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -260,16 +280,5 @@
     <MESSAGE value="added PKAddressTestCases" />
     <MESSAGE value="merge from main 04/04/2023" />
     <option name="LAST_COMMIT_MESSAGE" value="merge from main 04/04/2023" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
