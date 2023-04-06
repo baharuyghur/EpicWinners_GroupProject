@@ -87,8 +87,7 @@ public class TestingSearchFunctionalities extends CommonMethods {
 			Assert.assertEquals(spb.sortbyLowtoHigh.getText(), BaseClass.getProperty("object7"));
 			Assert.assertTrue(spb.sortbyHighToLow.isDisplayed());
 			
-			//Git practice with Bill
-
+			
 		}
 		
 		//@AfterMethod
