@@ -1,6 +1,5 @@
 package utilities;
 
-
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -16,18 +15,17 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
 public class BaseClass {
-	
-private static WebDriver driver;
-	
-	//driver instantiation function
+
+	private static WebDriver driver;
+
+	// driver instantiation function
 	public static WebDriver getDriver() {
 
 		if (driver == null) {
 
 			switch (BaseClass.getProperty("browser")) {
-			
+
 			case "chrome":
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
@@ -37,10 +35,9 @@ private static WebDriver driver;
 //				WebDriverManager.chromedriver().setup();
 //				driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
 				ChromeOptions options = new ChromeOptions();
-		        options.addArguments("--headless");
-		        driver = new ChromeDriver(options);
+				options.addArguments("--headless");
+				driver = new ChromeDriver(options);
 
-		        
 				break;
 
 			case "firefox":
@@ -67,64 +64,48 @@ private static WebDriver driver;
 				break;
 
 			}
-			
+
 			driver.get(BaseClass.getProperty("url"));
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Constants.implicitWait_time, TimeUnit.SECONDS);
 			PageInitializer.initialize();
-			
 
 		}
 
 		return driver;
 	}
-	
-	//driver close function
+
+	// driver close function
 	public static void closeDriver() {
-			if(driver != null) {
-				driver.quit();
-				driver =null;
-			}
+		if (driver != null) {
+			driver.quit();
+			driver = null;
+		}
 	}
-	
-	
-	//config Reader function
-	
+
+	// config Reader function
+
 	private static Properties configFile;
-	
 
 	static {
-		
+
 		try {
-			String filePath =Constants.config_filePath;
+			String filePath = Constants.config_filePath;
 			FileInputStream input = new FileInputStream(filePath);
-			
+
 			configFile = new Properties();
 			configFile.load(input);
-			
-			
+
 			input.close();
-			
-		}catch(Exception e) {
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 	}
-	
+
 	public static String getProperty(String keyName) {
 		return configFile.getProperty(keyName);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
