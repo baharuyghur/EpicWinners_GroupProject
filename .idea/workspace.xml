@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="added PKTestCases">
+    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="edited assertion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/propertiesFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/propertiesFiles/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/propertiesFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/propertiesFiles/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680737641003</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="edited assertion">
+      <created>1680828023646</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680828023646</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -285,6 +286,7 @@
     <MESSAGE value="added PKAddressTestCases" />
     <MESSAGE value="merge from main 04/04/2023" />
     <MESSAGE value="added PKTestCases" />
-    <option name="LAST_COMMIT_MESSAGE" value="added PKTestCases" />
+    <MESSAGE value="edited assertion" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited assertion" />
   </component>
 </project>

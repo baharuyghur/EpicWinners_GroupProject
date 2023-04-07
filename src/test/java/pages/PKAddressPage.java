@@ -104,13 +104,6 @@ public class PKAddressPage {
         signinButton.click();
     }
 
-//    public String getZipcode() {
-//        String addressConfrimation = confirmDeliverToAddress.getText();
-//        String zipCode = addressConfrimation.split("\\s")[2];
-//        System.out.println("Before split" + addressConfrimation);
-//        System.out.println("After split" + zipCode);
-//        return zipCode;
-//    }
  public static String actual;
     public void selectCountry(WebElement element,List <WebElement> elements, String country){
         CommonMethods.waitForClickability(element).click();
