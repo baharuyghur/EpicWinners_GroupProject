@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import utilities.BaseClass;
 import utilities.CommonMethods;
 
+import static pages.PKAddressPage.actual;
 import static pages.PKAddressPage.addressButton;
 
 public class PKAddressTestCases extends CommonMethods {
@@ -41,27 +42,24 @@ public class PKAddressTestCases extends CommonMethods {
                 "Address Header should contains " + expected);
     }
 
-
     @Test(priority = 4)
     public void verifySignInToSeeYourAddress() {
         addressButton.click();
         addressPage.signIn();
-        //addressPage.asserts(BaseClass.getProperty("signinInfoName"), "Hello, Lucia");
-    }
 
+        Assert.assertEquals(BaseClass.getProperty("signinInfoName"), "Hello, Lucia");
+    }
 
     @Test(priority = 5)
     public void verifySelectCountryDropdownButton() throws InterruptedException {
         addressPage.addressButton.click();
-//        selectDropDownVisibleText(addressPage.countryOptions, BaseClass.getProperty("country"));
         addressPage.selectCountry(addressPage.countryDropdownButton, addressPage.countryOptions01, "country");
 
-        addressPage.asserts("country", addressPage.actual);
+        Assert.assertEquals(BaseClass.getProperty("country"), actual);
     }
 
     @AfterMethod
     public void tearDown() {
-
         BaseClass.closeDriver();
     }
 }

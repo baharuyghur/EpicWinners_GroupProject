@@ -123,12 +123,6 @@ public class PKAddressPage {
             }
         }
     }
-
-    public void asserts(String expected, String actual){
-        Assert.assertEquals(actual, (BaseClass.getProperty(expected)));
-
-    }
-
 }
 
 
