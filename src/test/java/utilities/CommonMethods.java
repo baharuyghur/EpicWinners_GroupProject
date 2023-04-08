@@ -22,319 +22,280 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CommonMethods extends PageInitializer {
-<<<<<<< HEAD
 
-=======
+
+public class CommonMethods extends PageInitializer {
 	public static boolean isDemoMode = true;
 	
->>>>>>> 1017f10f48e9a28615b6decb146dd34b21fc6fee
 	/*
-	 * Method that clears and sends key
-	 * 
-	 */
-	public static void sendText(WebElement element, String text) {
-		element.clear();
-		element.sendKeys(text);
-	}
+     * Method that clears and sends key
+     * 
+     */
+    public static void sendText(WebElement element, String text) {
+        element.clear();
+        element.sendKeys(text);
+    }
 
-	/*
-	 * methods checks if radio/checkBox is enabled and clicks on it
-	 * 
-	 */
-	public static void clickRadioOrCheckbox(List<WebElement> radioOrCheckbox, String value) {
+    /*
+     * methods checks if radio/checkBox is enabled and clicks on it
+     * 
+     */
+    public static void clickRadioOrCheckbox(List<WebElement> radioOrCheckbox, String value) {
 
-		String actualValue;
+        String actualValue;
 
-		for (WebElement el : radioOrCheckbox) {
-			actualValue = el.getAttribute("value").trim();
-			if (actualValue.equals(value)) {
-				el.click();
-				break;
-			}
-		}
-	}
+        for (WebElement el : radioOrCheckbox) {
+            actualValue = el.getAttribute("value").trim();
+            if (actualValue.equals(value)) {
+                el.click();
+                break;
+            }
+        }
+    }
+    
+    public static void clickRadioOrCheckboxGetText(List<WebElement> radioOrCheckbox, String value) {
+        String actualValue;
 
-	public static void clickRadioOrCheckboxGetText(List<WebElement> radioOrCheckbox, String value) {
-		String actualValue;
+        for (WebElement el : radioOrCheckbox) {
+            actualValue = el.getText().trim();
+            if (actualValue.equals(value)) {
+                el.click();
+                break;
+            }
+        }
+    }
+    
+    // select DropDown value
+    public static void selectDropDownValue(WebElement element, String textTobeSelected) {
+        try {
+            Select select = new Select(element);
+            List<WebElement> options = select.getOptions();
+            for (WebElement el : options) {
+                if (el.getText().equals(textTobeSelected)) {
+                    select.selectByValue(textTobeSelected);
+                    break;
+                }
+            }
+        } catch (UnexpectedTagNameException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    // select DropDown by index
+    public static void selectDropDownIndex(WebElement element, int indexValue) {
+        try {
+            Select select = new Select(element);
 
-		for (WebElement el : radioOrCheckbox) {
-			actualValue = el.getText().trim();
-			if (actualValue.equals(value)) {
-				el.click();
-				break;
-			}
-		}
-	}
+            int size = select.getOptions().size();
 
-	// select DropDown value
-	public static void selectDropDownValue(WebElement element, String textTobeSelected) {
-		try {
-			Select select = new Select(element);
-			List<WebElement> options = select.getOptions();
-			for (WebElement el : options) {
-				if (el.getText().equals(textTobeSelected)) {
-					select.selectByValue(textTobeSelected);
-					break;
-				}
-			}
-		} catch (UnexpectedTagNameException e) {
-			e.printStackTrace();
-		}
-	}
+                if (size > indexValue) {
+                        select.selectByIndex(indexValue);
+                }
+        } catch (UnexpectedTagNameException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    //select dropDown by visible text
+    public static void selectDropDownVisibleText(WebElement element, String textVisibleTobeSelected) {
+        try {
+            Select select = new Select(element);
+            // loop option by for each loop
+            List<WebElement> options = select.getOptions();
+            for (WebElement el : options) {
+                if (el.getText().equals(textVisibleTobeSelected)) {
+                    select.selectByVisibleText(textVisibleTobeSelected);
+                    break;
+                }
+            }
+        } catch (UnexpectedTagNameException e) {
+            e.printStackTrace();
+        }
+    }
+   
+    //alert dismiss
+    public static void dismissAlert() {
+        try {
+            Alert alert = BaseClass.getDriver().switchTo().alert();
+            alert.dismiss();
+        } catch (NoAlertPresentException e) {
+            e.printStackTrace();
+        }
+    }
+    // alerts accept
+    public static void acceptAlert() {
+        try {
+            Alert alert = BaseClass.getDriver().switchTo().alert();
+            alert.accept();
+        } catch (NoAlertPresentException e) {
+            e.printStackTrace();
+        }
+    }
+    //alerts get text
+    public static String getAlertText() {
+        String alertText = null;
+        try {
+            Alert alert = BaseClass.getDriver().switchTo().alert();
+            alertText = alert.getText();
+        } catch (NoAlertPresentException e) {
+            e.printStackTrace();
+        }
+        return alertText;
+    }
+    
+    //alert send text
+    public static void alertSendText(String str) {
+        try {
+            Alert alert = BaseClass.getDriver().switchTo().alert();
+           alert.sendKeys(str);
+           alert.accept();
+        } catch (NoAlertPresentException e) {
+            e.printStackTrace();
+        }
+    }
+   
+    // iFrames
+    // switch using name or id
+    public static void switchToFrame(String nameOrId) {
+        try {
+            BaseClass.getDriver().switchTo().frame(nameOrId);
+        } catch (NoSuchFrameException e) {
+            e.printStackTrace();
+        }
+    }
 
-	// select DropDown by index
-	public static void selectDropDownIndex(WebElement element, int indexValue) {
-		try {
-			Select select = new Select(element);
+    // switch using INDEX
+    public static void switchToFrame(int index) {
+        try {
+            BaseClass.getDriver().switchTo().frame(index);
+        } catch (NoSuchFrameException e) {
+            e.printStackTrace();
+        }
+    }
 
-			int size = select.getOptions().size();
+    // switch using webElement
+    public static void switchToFrame(WebElement element) {
+        try {
+            BaseClass.getDriver().switchTo().frame(element);
+        } catch (NoSuchFrameException e) {
+            e.printStackTrace();
+        }
+    }
 
-			if (size > indexValue) {
-				select.selectByIndex(indexValue);
-			}
-		} catch (UnexpectedTagNameException e) {
-			e.printStackTrace();
-		}
-	}
+    // handle windows by switching to child window
 
-	// select dropDown by visible text
-	public static void selectDropDownVisibleText(WebElement element, String textVisibleTobeSelected) {
-		try {
-			Select select = new Select(element);
-			// loop option by for each loop
-			List<WebElement> options = select.getOptions();
-			for (WebElement el : options) {
-				if (el.getText().equals(textVisibleTobeSelected)) {
-					select.selectByVisibleText(textVisibleTobeSelected);
-					break;
-				}
-			}
-		} catch (UnexpectedTagNameException e) {
-			e.printStackTrace();
-		}
-	}
+    public static void switchtoChildWindow() {
+        String mainWindow = BaseClass.getDriver().getWindowHandle();
+        Set<String> allOpenWindows = BaseClass.getDriver().getWindowHandles();
 
-	// alert dismiss
-	public static void dismissAlert() {
-		try {
-			Alert alert = BaseClass.getDriver().switchTo().alert();
-			alert.dismiss();
-		} catch (NoAlertPresentException e) {
-			e.printStackTrace();
-		}
-	}
+        for (String eachWindow : allOpenWindows) {
+            if (!eachWindow.equals(mainWindow)) {
+                BaseClass.getDriver().switchTo().window(eachWindow);
+            }
+        }
+    }
+    
+ // declaring explicit wait(webDriver) and initiating it and then returning the object
+    
+     public static WebDriverWait getWaitObject() {
+         WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(), 30); 
+         return wait; 
+     }
+     //wait for element to be clickable
+     public static WebElement waitForClickability(WebElement element) {
+         return getWaitObject().until(ExpectedConditions.elementToBeClickable(element));
+     }
+    
+     public static WebElement waitForVisibility(WebElement element) {
+         return getWaitObject().until(ExpectedConditions.visibilityOf(element));
+     }
 
-	// alerts accept
-	public static void acceptAlert() {
-		try {
-			Alert alert = BaseClass.getDriver().switchTo().alert();
-			alert.accept();
-		} catch (NoAlertPresentException e) {
-			e.printStackTrace();
-		}
-	}
+     public static void clickMethod(WebElement element) {
+    	 waitForVisibility(element).click();
+ 
+     }
 
-	// alerts get text
-	public static String getAlertText() {
-		String alertText = null;
-		try {
-			Alert alert = BaseClass.getDriver().switchTo().alert();
-			alertText = alert.getText();
-		} catch (NoAlertPresentException e) {
-			e.printStackTrace();
-		}
-		return alertText;
-	}
+     
+     // JS executer
+     // declaring and initializing js object and returning it
+     public static JavascriptExecutor getJSObject() {
+         JavascriptExecutor js = (JavascriptExecutor) BaseClass.getDriver();
+         return js;
+     }
 
-	// alert send text
-	public static void alertSendText(String str) {
-		try {
-			Alert alert = BaseClass.getDriver().switchTo().alert();
-			alert.sendKeys(str);
-			alert.accept();
-		} catch (NoAlertPresentException e) {
-			e.printStackTrace();
-		}
-	}
+     // java script click element
+     public static void jsClick(WebElement element) {
+         getJSObject().executeScript("arguments[0].click()", element);
+     }
 
-	// iFrames
-	// switch using name or id
-	public static void switchToFrame(String nameOrId) {
-		try {
-			BaseClass.getDriver().switchTo().frame(nameOrId);
-		} catch (NoSuchFrameException e) {
-			e.printStackTrace();
-		}
-	}
+     // JavaScript sends text
+     public static void jsSentText(WebElement element, String text) {
+         String valueText = element.getAttribute("value");
+         getJSObject().executeScript("arguments[0].value='" + valueText + "'", text);
+     }
 
-	// switch using INDEX
-	public static void switchToFrame(int index) {
-		try {
-			BaseClass.getDriver().switchTo().frame(index);
-		} catch (NoSuchFrameException e) {
-			e.printStackTrace();
-		}
-	}
+     // scroll to element using js
+     public static void scrollToElement(WebElement element) {
+         getJSObject().executeScript("arguments[0].scrollIntoView(true);", element);
+     }
 
-	// switch using webElement
-	public static void switchToFrame(WebElement element) {
-		try {
-			BaseClass.getDriver().switchTo().frame(element);
-		} catch (NoSuchFrameException e) {
-			e.printStackTrace();
-		}
-	}
+     // scroll by pixel
+     public static void ScrolByPixel(int pixel) {
+         // positive -- scroll down
+         // negative -- scroll up
+         getJSObject().executeScript("window.scrollBy(0," + pixel + ")");
+     }
 
-	// handle windows by switching to child window
+     // getting time stamp
+     public static String getTimeStamp() {
+         Date date = new Date();
+         SimpleDateFormat sdf = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
+         return sdf.format(date.getTime());
+     }
 
-	public static void switchtoChildWindow() {
-		String mainWindow = BaseClass.getDriver().getWindowHandle();
-		Set<String> allOpenWindows = BaseClass.getDriver().getWindowHandles();
+     // thread .sleep is simplified
+     public static void wait(int seconds) {
 
-		for (String eachWindow : allOpenWindows) {
-			if (!eachWindow.equals(mainWindow)) {
-				BaseClass.getDriver().switchTo().window(eachWindow);
-			}
-		}
-	}
+         try {
+             Thread.sleep(seconds * 1000);
+         } catch (InterruptedException e) {
+             e.printStackTrace();
+         }
+     }
 
-	// declaring explicit wait(webDriver) and initiating it and then returning the
-	// object
+     // hover over == moving your courser on an element
+     public static void hover(WebElement element) {
+         Actions actions = new Actions(BaseClass.getDriver());
+         actions.moveToElement(element).build().perform();
+     }
 
-	public static WebDriverWait getWaitObject() {
-		WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(), 30);
-		return wait;
-	}
+     // create a method that dragsAndDrops
+     public static void dragsAndDrops(WebElement element, WebElement element2) {
+         Actions action = new Actions(BaseClass.getDriver());
+         action.dragAndDrop(element, element2).build().perform();
+     }
 
-	// wait for element to be clickable
-	public static WebElement waitForClickability(WebElement element) {
-		return getWaitObject().until(ExpectedConditions.elementToBeClickable(element));
-	}
+     // create a method that doubleClicks
+     public static void doubleClicks(WebElement element) {
+         Actions action = new Actions(BaseClass.getDriver());
+         action.doubleClick(element).build().perform();
+     }
 
-	public static WebElement waitForVisibility(WebElement element) {
-		return getWaitObject().until(ExpectedConditions.visibilityOf(element));
-	}
+    
+ //take screen shot
+     public static byte[] takeScreenshot(String filename) {
+         TakesScreenshot ts = (TakesScreenshot) BaseClass.getDriver();
+         byte[] picBytes = ts.getScreenshotAs(OutputType.BYTES);
 
-	public static void clickMethod(WebElement element) {
-		waitForVisibility(element).click();
+         File file = ts.getScreenshotAs(OutputType.FILE);
+         String destinationFile = "" + filename + getTimeStamp() + ".png";
 
-	}
+         try {
+             FileUtils.copyFile(file, new File(destinationFile));
+         } catch (Exception ex) {
+             System.out.println("Cannot take screenshot!");
+         }
 
-<<<<<<< HEAD
-	// JS executer
-	// declaring and initializing js object and returning it
-	public static JavascriptExecutor getJSObject() {
-		JavascriptExecutor js = (JavascriptExecutor) BaseClass.getDriver();
-		return js;
-	}
-
-	// java script click element
-	public static void jsClick(WebElement element) {
-		getJSObject().executeScript("arguments[0].click()", element);
-	}
-
-	// JavaScript sends text
-	public static void jsSentText(WebElement element, String text) {
-		String valueText = element.getAttribute("value");
-		getJSObject().executeScript("arguments[0].value='" + valueText + "'", text);
-	}
-
-	// scroll to element using js
-	public static void scrollToElement(WebElement element) {
-		getJSObject().executeScript("arguments[0].scrollIntoView(true);", element);
-	}
-
-	// scroll by pixel
-	public static void ScrolByPixel(int pixel) {
-		// positive -- scroll down
-		// negative -- scroll up
-		getJSObject().executeScript("window.scrollBy(0," + pixel + ")");
-	}
-
-	// getting time stamp
-	public static String getTimeStamp() {
-		Date date = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
-		return sdf.format(date.getTime());
-	}
-
-	// thread .sleep is simplified
-	public static void wait(int seconds) {
-
-		try {
-			Thread.sleep(seconds * 1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
-
-	// hover over == moving your courser on an element
-	public static void hover(WebElement element) {
-		Actions actions = new Actions(BaseClass.getDriver());
-		actions.moveToElement(element).build().perform();
-	}
-
-	// create a method that dragsAndDrops
-	public static void dragsAndDrops(WebElement element, WebElement element2) {
-		Actions action = new Actions(BaseClass.getDriver());
-		action.dragAndDrop(element, element2).build().perform();
-	}
-
-	// create a method that doubleClicks
-	public static void doubleClicks(WebElement element) {
-		Actions action = new Actions(BaseClass.getDriver());
-		action.doubleClick(element).build().perform();
-	}
-
-	// take screen shot
-	public static byte[] takeScreenshot(String filename) {
-		TakesScreenshot ts = (TakesScreenshot) BaseClass.getDriver();
-		byte[] picBytes = ts.getScreenshotAs(OutputType.BYTES);
-
-		File file = ts.getScreenshotAs(OutputType.FILE);
-		String destinationFile = "" + filename + getTimeStamp() + ".png";
-
-		try {
-			FileUtils.copyFile(file, new File(destinationFile));
-		} catch (Exception ex) {
-			System.out.println("Cannot take screenshot!");
-		}
-
-		return picBytes;
-	}
-
-	// calendar select date
-	public static void selectCalendarDate(List<WebElement> element, String text) {
-		for (WebElement pickDate : element) {
-			if (pickDate.isEnabled()) {
-				if (pickDate.getText().equals(text)) {
-					pickDate.click();
-					break;
-				}
-			}
-		}
-	}
-
-	/**
-	 * return a list of string from a list of elements ignores any element with no
-	 * text
-	 * 
-	 * @param list
-	 * @return
-	 */
-	public static List<String> getElementsText(List<WebElement> list) {
-		List<String> elemTexts = new ArrayList<String>();
-		for (WebElement el : list) {
-			if (!el.getText().isEmpty()) {
-				elemTexts.add(el.getText());
-			}
-		}
-		return elemTexts;
-	}
-
-}
-=======
          return picBytes;
      }
      
@@ -420,7 +381,7 @@ public class CommonMethods extends PageInitializer {
 
          }
 
-     }
+     }}
      
      
      
@@ -432,7 +393,3 @@ public class CommonMethods extends PageInitializer {
      
     
     
-    
-}  
-    
->>>>>>> 1017f10f48e9a28615b6decb146dd34b21fc6fee
