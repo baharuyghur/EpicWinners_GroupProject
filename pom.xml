@@ -30,10 +30,13 @@
 			<version>1.18.26</version>
 			<scope>provided</scope>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>Mavenproject_practice</groupId>
 			<artifactId>Mavenproject_practice</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+=======
+>>>>>>> 3b9742662655265a0b3c30fb496884490835565a
 	</dependencies>
 </project>
