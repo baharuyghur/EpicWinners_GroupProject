@@ -8,6 +8,7 @@ import utilities.BaseClass;
 public class LoginPage {
 	
 	public LoginPage() {
+
 		PageFactory.initElements(BaseClass.getDriver(), this);
 	}
 	

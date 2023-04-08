@@ -23,7 +23,12 @@ import org.openqa.selenium.support.ui.UnexpectedTagNameException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonMethods extends PageInitializer {
+<<<<<<< HEAD
 
+=======
+	public static boolean isDemoMode = true;
+	
+>>>>>>> 1017f10f48e9a28615b6decb146dd34b21fc6fee
 	/*
 	 * Method that clears and sends key
 	 * 
@@ -216,6 +221,7 @@ public class CommonMethods extends PageInitializer {
 
 	}
 
+<<<<<<< HEAD
 	// JS executer
 	// declaring and initializing js object and returning it
 	public static JavascriptExecutor getJSObject() {
@@ -328,3 +334,105 @@ public class CommonMethods extends PageInitializer {
 	}
 
 }
+=======
+         return picBytes;
+     }
+     
+     
+ // calendar select date
+     public static void selectCalendarDate(List<WebElement> element, String text) {
+         for (WebElement pickDate : element) {
+             if (pickDate.isEnabled()) {
+                 if (pickDate.getText().equals(text)) {
+                     pickDate.click();
+                     break;
+                 }
+             }
+         }
+     }
+     
+     
+     /**
+      * return a list of string from a list of elements ignores any element with no
+      * text
+      * 
+      * @param list
+      * @return
+      */
+     public static List<String> getElementsText(List<WebElement> list) {
+         List<String> elemTexts = new ArrayList<String>();
+         for (WebElement el : list) {
+             if (!el.getText().isEmpty()) {
+                 elemTexts.add(el.getText());
+             }
+         }
+         return elemTexts;
+     }
+     
+     
+     public void highLightElementMethod(WebElement element) {
+
+         try {
+             if (isDemoMode) {
+                 for (int i = 0; i <= 2; i++) {
+
+                     // Create object of a JavascriptExecutor interface
+                     JavascriptExecutor js = (JavascriptExecutor) BaseClass.getDriver();
+                     // use executeScript() method and pass the arguments
+                     // Here i pass values based on css style. Yellow background color with solid red
+                     // color border.
+                     js.executeScript(
+                             "arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');",
+                             element);
+
+                     wait(0.2);
+
+                     // Create object of a JavascriptExecutor interface
+                     js = (JavascriptExecutor) BaseClass.getDriver();
+                     // use executeScript() method and pass the arguments
+                     // Here i pass values based on css style. Yellow background color with solid red
+                     // color border.
+                     js.executeScript(
+                             "arguments[0].setAttribute('style', 'background: red; border: 2px solid yellow;');",
+                             element);
+
+                     wait(0.2);
+
+                     // Create object of a JavascriptExecutor interface
+                     js = (JavascriptExecutor) BaseClass.getDriver();
+                     // use executeScript() method and pass the arguments
+                     // Here i pass values based on css style. Yellow background color with solid red
+                     // color border.
+                     js.executeScript("arguments[0].setAttribute('style', 'background: white; border: 2px solid red;');",
+                             element);
+                 }
+             }
+         } catch (Exception e) {
+
+         }
+
+     }
+
+     public void wait(double second) {
+         try {
+             Thread.sleep((int) (second * 1000));
+         } catch (Exception e) {
+
+         }
+
+     }
+     
+     
+     
+     
+     
+     
+     
+     
+     
+    
+    
+    
+}  
+    
+>>>>>>> 1017f10f48e9a28615b6decb146dd34b21fc6fee
