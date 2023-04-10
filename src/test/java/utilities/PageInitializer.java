@@ -15,6 +15,7 @@ public class PageInitializer extends BaseClass{
 public static void initialize() {
 	lpb = new LoginPage_Bahar();
 	spb=new SigninPage_Bahar();
+	hp = new HomePage();
 	
 }
 
