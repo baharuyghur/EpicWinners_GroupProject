@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+/target/
+=======
+.idea
+/target
+.settings
+/test-output
+.classpath
+.project
+>>>>>>> 1017f10f48e9a28615b6decb146dd34b21fc6fee
