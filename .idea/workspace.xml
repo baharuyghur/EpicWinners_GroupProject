@@ -5,67 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="edited format and deleted unused method">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ClinicPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcases/ClinicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/EpicWinners_GroupProject/EpicWinners_GroupProject/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/EpicWinners_GroupProject/EpicWinners_GroupProject/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pagesMaharem/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagesMaharem/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/Bahar_SearchFunctionalities/TestingSearchFunctionalities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/Bahar_SearchFunctionalities/TestingSearchFunctionalities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcasesMaharem/languagetest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcasesMaharem/languagetest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/CommonMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/PageInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/PageInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/propertiesFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/propertiesFiles/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Bahar_Pages/LoginPage_Bahar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/Bahar_Pages/LoginPage_Bahar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/Bahar_Pages/SigninPage_Bahar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/Bahar_Pages/SigninPage_Bahar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/propertiesFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/propertiesFiles/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/Bahar_SearchFunctionalities/TestingSearchFunctionalities.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/Bahar_SearchFunctionalities/TestingSearchFunctionalities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/LoginTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/LoginTestCases.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/BaseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/BaseClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/CommonMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/CommonMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Constants.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/ListenersTestNG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/ListenersTestNG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/PageInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/PageInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Default suite/Default test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/bullet_point.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/collapseall.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/failed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/jquery-3.6.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-testcases.LoginTestCases.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/navigator-bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/Default test.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/classes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/groups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-alphabetical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods-not-run.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/methods.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/reporter-output.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/testng.xml.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Default suite/toc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/passed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/skipped.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-reports2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +104,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.PKAddressTestCases.verifySignInToSeeYourAddress">
+  <component name="RunManager" selected="TestNG.PKAddressTestCases.verifyCheckAddressButtonFunctionality">
     <configuration name="C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EpicWinners_GroupProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -188,7 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PKAddressTestCases.verifyEnterZipcode" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PKAddressTestCases.verifyCheckAddressButtonFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
         <pattern>
@@ -198,7 +142,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
-      <option name="METHOD_NAME" value="verifyEnterZipcode" />
+      <option name="METHOD_NAME" value="verifyCheckAddressButtonFunctionality" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -244,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PKAddressTestCases.verifySignInToSeeYourAddress" />
-        <item itemvalue="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton" />
+        <item itemvalue="TestNG.PKAddressTestCases.verifyCheckAddressButtonFunctionality" />
         <item itemvalue="TestNG.PKAddressTestCases" />
+        <item itemvalue="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton" />
+        <item itemvalue="TestNG.PKAddressTestCases.verifySignInToSeeYourAddress" />
         <item itemvalue="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" />
-        <item itemvalue="TestNG.PKAddressTestCases.verifyEnterZipcode" />
       </list>
     </recent_temporary>
   </component>
@@ -345,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680878598395</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="edited format and deleted unused method">
+      <created>1681238038319</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1681238038319</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
