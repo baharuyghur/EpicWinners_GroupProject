@@ -23,17 +23,31 @@ public class HomePage {
 	//@FindBy(xpath="//header/div[@id='navbar']/div[@id='nav-belt']/div[3]/div[1]/a[1]/span[1]")
 	@FindBy(xpath="//*[@id='icp-nav-flyout']")
 	public WebElement languageChangebutton;
-	// language DROP DOWN options 
+	 
+
+	@FindBy(xpath="//*[@id='icp-nav-flyout']")
+	public WebElement ARABIClanguageChangebutton;
 	
 	@FindBy(xpath="//div[@class='nav-coreFlyout nav-flyout'and @id='nav-flyout-icp']")
 	 public WebElement dropdownmenu;
 	
+	
+	@FindBy(xpath=" //div[@id='nav-tools']/a")
+	public List<WebElement> languageDropDown1;
 	
 	@FindBy(xpath="//span[@style='unicode-bidi:isolate; direction:ltr;' and @dir='ltr']")
     public List<WebElement> languageDropDown;
 	
 	@FindBy(xpath="//*[@id=\'nav-link-accountList\']")
 		public WebElement signInbutton;
+	
+	@FindBy(xpath="//*[@id=\'authportal-main-section\']/div[2]/div/div[1]/form/div/div/div/h1")
+	
+	public WebElement loginemailPAGEtext;
+	
+	@FindBy(xpath="//*[@id=\'ap_change_login_claim\']")
+	public WebElement passwordPAGEtext;
+	
 
 	@FindBy(xpath="//*[@id='nav-flyout-ya-signin']/a/span")
 			public WebElement loginbutton;
@@ -54,7 +68,7 @@ public class HomePage {
 	
 	//*[@id="signInSubmit"]
 
-	
+
 	    
 	// Locate the desired language option and click on it
 	@FindBy(xpath="//*[@id=\"nav-flyout-icp\"]/div[2]/a[1]/span/span[1]")
@@ -73,7 +87,23 @@ public class HomePage {
             }
         }    
         }
+
+	
+	public void selectLanguage1 (String language1) {
+        for (int i = 0; i < languageDropDown1.size(); i++) {
+            if (languageDropDown1.get(i).getText().contains(language1)) {
+            	//create action object ,one way to click
+        Actions actions = new Actions(BaseClass.getDriver());
+        actions.moveToElement(languageDropDown1.get(i));
+         (languageDropDown1.get(i)).click();
+             break;
+            }
+        }    
+        }
+
 }
+
+
 
 	//String selectedLanguage = languageButton.getText();
     

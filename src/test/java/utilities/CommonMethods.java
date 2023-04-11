@@ -381,7 +381,7 @@ public class CommonMethods extends PageInitializer {
 
          }
 
-     }
+     }}
      
      
      
@@ -392,7 +392,4 @@ public class CommonMethods extends PageInitializer {
      
      
     
-    
-    
-}  
     

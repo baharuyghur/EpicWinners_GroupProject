@@ -67,14 +67,11 @@ public class PKAddressPage {
     @FindBy(xpath = "//span[@id = 'auth-signin-button']")
     public WebElement signinButton;
 
-    @FindBy (id = "nav-link-accountList-nav-line-1")
-    public WebElement signinConfirmedName;
-
-
-    public static void selectYourAddressButton() {
-
-        addressButton.click();
-    }
+//
+//    public static void selectYourAddressButton() {
+//
+//        addressButton.click();
+//    }
 
     public void chooseYourLocationBoxShowup() {
         String chooseYourLocation = chooseYourLocationHeader.getText();

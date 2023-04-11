@@ -1,6 +1,7 @@
 package utilities;
 
 import pages.PKAddressPage;
+import pages.ClinicPage;
 import pages.LoginPage;
 
 import pages.Bahar_Pages.LoginPage_Bahar;
@@ -14,6 +15,7 @@ public class PageInitializer extends BaseClass{
 	public static LoginPage_Bahar lpb;
 	public static SigninPage_Bahar spb;
 	public static HomePage hp;
+	public static ClinicPage cp;
 
 
 	public static void initialize() {
@@ -22,5 +24,6 @@ public class PageInitializer extends BaseClass{
 		lpb = new LoginPage_Bahar();
 		spb=new SigninPage_Bahar();
     hp= new HomePage();
+    cp= new ClinicPage();
 	}
 }

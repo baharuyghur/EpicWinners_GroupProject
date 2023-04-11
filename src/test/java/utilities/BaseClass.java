@@ -97,3 +97,4 @@ public class BaseClass {
         return configFile.getProperty(keyName);
     }
 }
+
