@@ -32,7 +32,7 @@ public class ClinicTest extends CommonMethods {
 		//prompts to enter password again with security keys
 		//doing this manually to save time :D
 		
-		cp.FillName.sendKeys("Maria Nao");
+		//cp.FillName.sendKeys("Maria Nao");
 		
 		
 	}
