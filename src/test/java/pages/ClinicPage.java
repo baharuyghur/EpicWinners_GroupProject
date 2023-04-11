@@ -70,7 +70,7 @@ public class ClinicPage {
 	//Amazon Clinic Page 
 	
 	//fill in name
-	@FindBy(xpath="//*[@id=\"first-name-input\"]/span/div")
-	public WebElement FillName;
+	//@FindBy(xpath="//*[@id=\"first-name-input\"]/span/div")
+	//public WebElement FillName;
 	
 }
