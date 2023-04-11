@@ -32,8 +32,6 @@ public class PKAddressPage {
     @FindBy(xpath = "//span/button[@class=('a-button-text')]")
     public WebElement doneButton;
 
-    @FindBy(xpath = "//span[@id=('glow-ingress-line2')]")
-    public WebElement confirmDeliverToAddress;//wrong locator?
 
     @FindBy(xpath = "//h4[@id=('a-popover-header-1')]")
     public WebElement chooseYourLocationHeader;
