@@ -32,8 +32,6 @@ public class PKAddressPage {
     @FindBy(xpath = "//span/button[@class=('a-button-text')]")
     public WebElement doneButton;
 
-    @FindBy(xpath = "//span[@id=('glow-ingress-line2')]")
-    public WebElement confirmDeliverToAddress;//wrong locator?
 
     @FindBy(xpath = "//h4[@id=('a-popover-header-1')]")
     public WebElement chooseYourLocationHeader;
@@ -69,14 +67,11 @@ public class PKAddressPage {
     @FindBy(xpath = "//span[@id = 'auth-signin-button']")
     public WebElement signinButton;
 
-    @FindBy (id = "nav-link-accountList-nav-line-1")
-    public WebElement signinConfirmedName;
-
-
-    public static void selectYourAddressButton() {
-
-        addressButton.click();
-    }
+//
+//    public static void selectYourAddressButton() {
+//
+//        addressButton.click();
+//    }
 
     public void chooseYourLocationBoxShowup() {
         String chooseYourLocation = chooseYourLocationHeader.getText();
@@ -104,13 +99,6 @@ public class PKAddressPage {
         signinButton.click();
     }
 
-//    public String getZipcode() {
-//        String addressConfrimation = confirmDeliverToAddress.getText();
-//        String zipCode = addressConfrimation.split("\\s")[2];
-//        System.out.println("Before split" + addressConfrimation);
-//        System.out.println("After split" + zipCode);
-//        return zipCode;
-//    }
  public static String actual;
     public void selectCountry(WebElement element,List <WebElement> elements, String country){
         CommonMethods.waitForClickability(element).click();
