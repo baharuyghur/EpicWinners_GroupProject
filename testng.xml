@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PKAddressTestCases">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/src/test/java/testcases/PKAddressTestCases.java">
+        <classes>
+            <class name="testcases.PKAddressTestCases">
+                <methods>
+                    <include name="verifyCheckAddressButtonFunctionality"/>
+                    <include name="verifyEnterZipcode"/>
+                    <include name="verifyZipcodeOnGlobalHeaderToMatchWithEnteredZipcode"/>
+                    <include name="verifySignInToSeeYourAddress"/>
+                    <include name="verifySelectCountryDropdownButton"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
