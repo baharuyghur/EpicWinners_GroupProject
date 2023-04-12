@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="added xml file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/PageInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/PageInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" afterDir="false" />
-    </list>
+    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="Created packages" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,12 +113,12 @@
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.PKAddressPage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressPage.PKAddressTestCases" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -137,12 +130,12 @@
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.PKAddressPage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressPage.PKAddressTestCases" />
       <option name="METHOD_NAME" value="verifyCheckAddressButtonFunctionality" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -155,12 +148,12 @@
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.PKAddressPage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressPage.PKAddressTestCases" />
       <option name="METHOD_NAME" value="verifySelectCountryDropdownButton" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -173,12 +166,12 @@
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.PKAddressPage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressPage.PKAddressTestCases" />
       <option name="METHOD_NAME" value="verifySignInToSeeYourAddress" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -318,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681245578060</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Created packages">
+      <created>1681316237020</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1681316237020</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -334,6 +334,7 @@
     <MESSAGE value="edited assertion" />
     <MESSAGE value="edited format and deleted unused method" />
     <MESSAGE value="added xml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added xml file" />
+    <MESSAGE value="Created packages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created packages" />
   </component>
 </project>
