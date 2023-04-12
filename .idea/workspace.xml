@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="added PKTestCases">
+    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="edited format and deleted unused method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/propertiesFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/propertiesFiles/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/propertiesFiles/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/propertiesFiles/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +29,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
@@ -59,6 +60,14 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ff657ea0-3032-467f-8487-60973e41a438" />
+        <option name="url" value="https://github.com/baharuyghur/EpicWinners_GroupProject.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -83,17 +92,27 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/aom_t/eclipse-workspace/CucumberJava",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aom_t/eclipse-workspace/CucumberJava&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.PKAddressTestCases.verifyEnterZipcode">
+}</component>
+  <component name="RunManager" selected="TestNG.PKAddressTestCases.verifyCheckAddressButtonFunctionality">
+    <configuration name="C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EpicWinners_GroupProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PKAddressTestCases" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
@@ -122,24 +141,6 @@
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
       <option name="METHOD_NAME" value="verifyCheckAddressButtonFunctionality" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PKAddressTestCases.verifyEnterZipcode" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EpicWinners_GroupProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
-      <option name="METHOD_NAME" value="verifyEnterZipcode" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -185,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PKAddressTestCases.verifyEnterZipcode" />
-        <item itemvalue="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton" />
-        <item itemvalue="TestNG.PKAddressTestCases" />
-        <item itemvalue="TestNG.PKAddressTestCases.verifySignInToSeeYourAddress" />
         <item itemvalue="TestNG.PKAddressTestCases.verifyCheckAddressButtonFunctionality" />
+        <item itemvalue="TestNG.PKAddressTestCases" />
+        <item itemvalue="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton" />
+        <item itemvalue="TestNG.PKAddressTestCases.verifySignInToSeeYourAddress" />
+        <item itemvalue="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +273,42 @@
       <option name="project" value="LOCAL" />
       <updated>1680737641003</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="edited assertion">
+      <created>1680828023646</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680828023646</updated>
+    </task>
+    <task id="LOCAL-00012" summary="edited format and deleted unused method">
+      <created>1680878598395</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680878598395</updated>
+    </task>
+    <task id="LOCAL-00013" summary="edited format and deleted unused method">
+      <created>1681238038319</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1681238038319</updated>
+    </task>
+    <task id="LOCAL-00014" summary="edited format and deleted unused method">
+      <created>1681245144308</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1681245144308</updated>
+    </task>
+    <task id="LOCAL-00015" summary="edited format and deleted unused method">
+      <created>1681245151386</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681245151386</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -285,6 +321,8 @@
     <MESSAGE value="added PKAddressTestCases" />
     <MESSAGE value="merge from main 04/04/2023" />
     <MESSAGE value="added PKTestCases" />
-    <option name="LAST_COMMIT_MESSAGE" value="added PKTestCases" />
+    <MESSAGE value="edited assertion" />
+    <MESSAGE value="edited format and deleted unused method" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited format and deleted unused method" />
   </component>
 </project>

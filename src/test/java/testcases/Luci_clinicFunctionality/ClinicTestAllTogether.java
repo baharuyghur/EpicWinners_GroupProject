@@ -1,19 +1,19 @@
-package testcases;
+package testcases.Luci_clinicFunctionality;
 
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import utilities.BaseClass;
 import utilities.CommonMethods;
 
-public class ClinicTest extends CommonMethods {
+public class ClinicTestAllTogether extends CommonMethods {
+	
 
 	@BeforeMethod
 	public void beforeTest() {
 		BaseClass.getDriver();
 	}
-	
+
 	@Test
 	public void ClickOnClinic() {
 		cp.ClinicLink.click();
@@ -21,7 +21,7 @@ public class ClinicTest extends CommonMethods {
 		cp.SearchBar.sendKeys("notepad");
 		cp.SinusInfectionTab.click();
 		cp.ClickOnState.click();
-		cp.SelectSate.click();	
+		cp.SelectSate.click();
 		cp.SelectHealthTap.click();
 		cp.ClickGetStarted.click();
 		cp.EnterEmail.sendKeys("epicwinners01@gmail.com");
@@ -29,21 +29,14 @@ public class ClinicTest extends CommonMethods {
 		cp.EnterPassword.sendKeys("techcircle");
 		cp.SelectSignIn.click();
 		
-		//prompts to enter password again with security keys
-		//doing this manually to save time :D
-		
-		cp.FillName.sendKeys("Maria Nao");
-		
-		
-	}
-	
-	
-		
-	
+		// prompts to enter password again with security keys
 			
+		
+		//cp.FillFirstName.sendKeys("Maria");
+		//cp.Fill2ndName.sendKeys("Nao");
+		//cp.FillLastname.sendKeys("Mayo");
 
-			
-
-
+	
 	}
 
+}

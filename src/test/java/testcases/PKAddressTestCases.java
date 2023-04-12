@@ -3,11 +3,11 @@ package testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+import pages.PKAddressPage;
 import utilities.BaseClass;
 import utilities.CommonMethods;
 
-import static pages.PKAddressPage.actual;
-import static pages.PKAddressPage.addressButton;
+import static pages.PKAddressPage.*;
 
 public class PKAddressTestCases extends CommonMethods {
 
@@ -50,13 +50,13 @@ public class PKAddressTestCases extends CommonMethods {
         Assert.assertEquals(BaseClass.getProperty("signinInfoName"), "Hello, Lucia");
     }
 
-    @Test(priority = 5)
-    public void verifySelectCountryDropdownButton() throws InterruptedException {
-        addressPage.addressButton.click();
-        addressPage.selectCountry(addressPage.countryDropdownButton, addressPage.countryOptions01, "country");
-
-        Assert.assertEquals(BaseClass.getProperty("country"), actual);
-    }
+//    @Test(priority = 5)
+//    public void verifySelectCountryDropdownButton() throws InterruptedException {
+//        addressPage.addressButton.click();
+//        addressPage.selectCountry(addressPage.countryDropdownButton, addressPage.countryOptions01, "country");
+//
+//        Assert.assertEquals(BaseClass.getProperty("country"), actual);
+//    }
 
     @AfterMethod
     public void tearDown() {

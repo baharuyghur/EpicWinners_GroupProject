@@ -14,6 +14,8 @@ import utilities.CommonMethods;
 import java.util.List;
 
 public class PKAddressPage {
+
+
     public PKAddressPage() {
 
         PageFactory.initElements(BaseClass.getDriver(), this);
@@ -32,9 +34,6 @@ public class PKAddressPage {
     @FindBy(xpath = "//span/button[@class=('a-button-text')]")
     public WebElement doneButton;
 
-    @FindBy(xpath = "//span[@id=('glow-ingress-line2')]")
-    public WebElement confirmDeliverToAddress;//wrong locator?
-
     @FindBy(xpath = "//h4[@id=('a-popover-header-1')]")
     public WebElement chooseYourLocationHeader;
 
@@ -49,7 +48,7 @@ public class PKAddressPage {
     public WebElement countryOptions;
 
     @FindBy(xpath = "//*[contains(@class,'a-dropdown-item')]")
-    public List <WebElement> countryOptions01;
+    public List<WebElement> countryOptions01;
 
     @FindBy(css = "#glow-ingress-block > span:nth-child(2)")
     public WebElement headerZipcode;
@@ -69,14 +68,6 @@ public class PKAddressPage {
     @FindBy(xpath = "//span[@id = 'auth-signin-button']")
     public WebElement signinButton;
 
-    @FindBy (id = "nav-link-accountList-nav-line-1")
-    public WebElement signinConfirmedName;
-
-
-    public static void selectYourAddressButton() {
-
-        addressButton.click();
-    }
 
     public void chooseYourLocationBoxShowup() {
         String chooseYourLocation = chooseYourLocationHeader.getText();
@@ -97,6 +88,7 @@ public class PKAddressPage {
     }
 
     public void signIn() {
+        CommonMethods.wait(3);
         signInToSeeYourAddressButton.click();
         emailBox.sendKeys(BaseClass.getProperty("email"));
         continueButton.click();
@@ -104,19 +96,13 @@ public class PKAddressPage {
         signinButton.click();
     }
 
-//    public String getZipcode() {
-//        String addressConfrimation = confirmDeliverToAddress.getText();
-//        String zipCode = addressConfrimation.split("\\s")[2];
-//        System.out.println("Before split" + addressConfrimation);
-//        System.out.println("After split" + zipCode);
-//        return zipCode;
-//    }
- public static String actual;
-    public void selectCountry(WebElement element,List <WebElement> elements, String country){
+    public static String actual;
+
+    public void selectCountry(WebElement element, List<WebElement> elements, String country) {
         CommonMethods.waitForClickability(element).click();
-        for(WebElement el : elements){
-            if(el.getText().toLowerCase().trim().contains(BaseClass.getProperty(country))){
-                actual  = el.getText().toLowerCase().trim();
+        for (WebElement el : elements) {
+            if (el.getText().toLowerCase().trim().contains(BaseClass.getProperty(country))) {
+                actual = el.getText().toLowerCase().trim();
                 CommonMethods.waitForClickability(el).click();
                 CommonMethods.wait(3);
                 break;
