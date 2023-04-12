@@ -7,6 +7,7 @@ import utilities.BaseClass;
 import utilities.CommonMethods;
 
 import static pages.PKAddressPage.PKAddressPage.*;
+import static utilities.PageInitializer.addressPage;
 
 public class PKAddressTestCases extends CommonMethods {
 
