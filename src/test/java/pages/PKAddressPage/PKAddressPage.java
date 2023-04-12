@@ -1,4 +1,4 @@
-package pages;
+package pages.PKAddressPage;
 
 import com.fasterxml.jackson.databind.ser.Serializers;
 import org.openqa.selenium.By;
@@ -99,6 +99,7 @@ public class PKAddressPage {
     public static String actual;
 
     public void selectCountry(WebElement element, List<WebElement> elements, String country) {
+        CommonMethods.wait(3);
         CommonMethods.waitForClickability(element).click();
         for (WebElement el : elements) {
             if (el.getText().toLowerCase().trim().contains(BaseClass.getProperty(country))) {

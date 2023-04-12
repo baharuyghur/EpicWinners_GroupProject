@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="edited format and deleted unused method">
+    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="added xml file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PKAddressPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/PKAddressTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/PageInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/PageInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" afterDir="false" />
     </list>
@@ -102,7 +105,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.PKAddressTestCases.verifyCheckAddressButtonFunctionality">
+  <component name="RunManager" selected="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton">
     <configuration name="C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EpicWinners_GroupProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -186,9 +189,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton" />
         <item itemvalue="TestNG.PKAddressTestCases.verifyCheckAddressButtonFunctionality" />
         <item itemvalue="TestNG.PKAddressTestCases" />
-        <item itemvalue="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton" />
         <item itemvalue="TestNG.PKAddressTestCases.verifySignInToSeeYourAddress" />
         <item itemvalue="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" />
       </list>
@@ -308,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681245151386</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added xml file">
+      <created>1681245578060</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681245578060</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -323,6 +333,7 @@
     <MESSAGE value="added PKTestCases" />
     <MESSAGE value="edited assertion" />
     <MESSAGE value="edited format and deleted unused method" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited format and deleted unused method" />
+    <MESSAGE value="added xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added xml file" />
   </component>
 </project>
