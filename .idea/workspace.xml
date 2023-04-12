@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="edited format and deleted unused method">
+    <list default="true" id="497fbabe-9b70-477a-a228-b343f79ea902" name="Changes" comment="Created packagesgit pull">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/PKAddressPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testcases/PKAddressTestCases.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/PKAddressPage/PKAddressTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/PKAddressPage/PKAddressTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/PageInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/PageInitializer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.PKAddressTestCases.verifyCheckAddressButtonFunctionality">
+  <component name="RunManager" selected="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton">
     <configuration name="C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EpicWinners_GroupProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -117,12 +117,12 @@
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.PKAddressPage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressPage.PKAddressTestCases" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -134,12 +134,12 @@
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.PKAddressPage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressPage.PKAddressTestCases" />
       <option name="METHOD_NAME" value="verifyCheckAddressButtonFunctionality" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -152,12 +152,12 @@
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.PKAddressPage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressPage.PKAddressTestCases" />
       <option name="METHOD_NAME" value="verifySelectCountryDropdownButton" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -170,12 +170,12 @@
       <module name="EpicWinners_GroupProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.PKAddressPage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressTestCases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.PKAddressPage.PKAddressTestCases" />
       <option name="METHOD_NAME" value="verifySignInToSeeYourAddress" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -186,9 +186,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton" />
         <item itemvalue="TestNG.PKAddressTestCases.verifyCheckAddressButtonFunctionality" />
         <item itemvalue="TestNG.PKAddressTestCases" />
-        <item itemvalue="TestNG.PKAddressTestCases.verifySelectCountryDropdownButton" />
         <item itemvalue="TestNG.PKAddressTestCases.verifySignInToSeeYourAddress" />
         <item itemvalue="TestNG.C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/testng.xml" />
       </list>
@@ -308,7 +308,35 @@
       <option name="project" value="LOCAL" />
       <updated>1681245151386</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added xml file">
+      <created>1681245578060</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681245578060</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Created packages">
+      <created>1681316237020</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1681316237020</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Created packagesgit pull">
+      <created>1681316424684</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1681316424684</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Created packagesgit pull">
+      <created>1681316441123</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1681316441123</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -323,6 +351,9 @@
     <MESSAGE value="added PKTestCases" />
     <MESSAGE value="edited assertion" />
     <MESSAGE value="edited format and deleted unused method" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited format and deleted unused method" />
+    <MESSAGE value="added xml file" />
+    <MESSAGE value="Created packages" />
+    <MESSAGE value="Created packagesgit pull" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created packagesgit pull" />
   </component>
 </project>
