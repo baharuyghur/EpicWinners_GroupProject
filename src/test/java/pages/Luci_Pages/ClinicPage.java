@@ -1,4 +1,4 @@
-package pages;
+package pages.Luci_Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -70,7 +70,14 @@ public class ClinicPage {
 	//Amazon Clinic Page 
 	
 	//fill in name
-	//@FindBy(xpath="//*[@id=\"first-name-input\"]/span/div")
-	//public WebElement FillName;
+	@FindBy(xpath="//*[@id=\"first-name-input\"]")
+	public WebElement FillFirstName;
 	
+	//Fill 2nd Name
+	@FindBy(xpath="//*[@id=\"middle-name-input\"]")
+	public WebElement Fill2ndName;
+	
+	//Fill last name
+	@FindBy(xpath="//*[@id=\"last-name-input\"]")
+	public WebElement FillLastname;
 }
