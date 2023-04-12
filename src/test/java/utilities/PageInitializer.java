@@ -1,9 +1,10 @@
 package utilities;
 
 import pages.PKAddressPage;
-import pages.ClinicPage;
+
 import pages.Bahar_Pages.LoginPage_Bahar;
 import pages.Bahar_Pages.SigninPage_Bahar;
+import pages.Luci_Pages.ClinicPage;
 import pagesMaharem.HomePage;
 
 public class PageInitializer extends BaseClass{
