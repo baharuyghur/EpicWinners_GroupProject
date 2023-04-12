@@ -4,7 +4,7 @@
     <test verbose="2" preserve-order="true"
           name="C:/Users/aom_t/eclipse-workspace/EpicWinners_GroupProject/src/test/java/testcases/PKAddressTestCases.java">
         <classes>
-            <class name="testcases.PKAddressTestCases">
+            <class name="testcases.PKAddressPage.PKAddressTestCases">
                 <methods>
                     <include name="verifyCheckAddressButtonFunctionality"/>
                     <include name="verifyEnterZipcode"/>
